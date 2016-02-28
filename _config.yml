@@ -1,22 +1,68 @@
-name: "Blog of Wenli Zhang"
-description: "Web Front-End Blog by Wenli Zhang"
+# Site settings
+title: MOREKEY
+header-img: "img/facebook.jpg"
+tagline: "MK"  
+description: "潘迪凹|自说自话"  
+baseurl: ""
+url: "http://morekey.me/blog"  
 
-url: "http://zhangwenli.com/blog"
-loadingImg: "http://zhangwenli.com/blog/img/loading.gif"
-filePath: "http://zhangwenli.com/blog/img/"
+# About/contact
+owner: 
+  name: " morekey"
+  email: panmaike@hotmail.com
+  bio: ""
 
-timezone: Asia/Shanghai
+# Data
+gavatar: 
+favicon: img/favicon.png
 
-paginate: 16
-paginate_path: "/page:num"
+douban_username:  潘迪凹
+twitter_username: 潘第安
+github_username: morekeys
+facebook_username: 
+weibo_username: 潘迪凹
+zhihu_username: 潘迪凹
 
+# Build settings  
+# use Github Flavored Markdown !important  
+# document: http://jekyllrb.com/docs/configuration/#kramdown  
 markdown: kramdown
-kramdown:
-  input: GFM
 highlighter: rouge
-
 permalink: pretty
+paginate: 8
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
 
-gems:
-- jekyll-paginate
-- github-pages
+
+# http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: Asia/WenZhou
+
+# Defaults for posts
+defaults:
+  -
+    scope: 
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "潘迪凹"
+      header-img: "img/facebook.jpg" # We don't want posts without a header image, that whould mean white on white
+
+# Comments 
+comments :
+  provider : duoshuo
+  duoshuo :
+    short_name : pandiao
+  disqus :
+      short_name : pandiao
+
+# Analytics and webmaster tools stuff goes here
+google_analytics: 
+google_verify:
+# https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
+bing_verify:
+
+# Links to include in footer navigation
+#Gems
+gems: [jekyll-paginate]
+paginate: 5
+paginate_path: "page:num"

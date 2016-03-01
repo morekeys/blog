@@ -30,11 +30,12 @@ header-img: "img/green.jpg"
 
 ###联系
 
-- [博客：www.morekey.me](www.morekey.me)
+- [博客：blog.morekey.me](blog.morekey.me)
 
 - [微博@潘迪凹](http://weibo.com/2518282332)
 
 - [知乎@潘迪凹](https://www.zhihu.com/people/pan-di-ao)
+- [简历@PM-Panmaike](https://morekeys.github.io/blog/PM-panmaike.pdf)
 
 
 

@@ -10,7 +10,7 @@ header-img: "img/green.jpg"
     <p><img src="http://7xqlpw.com1.z0.glb.clouddn.com/200.jpg" align="center"></p>
 </center>
 
-###我是**潘迪凹**，这是我行走互联网江湖的**花名**。
+我是**潘迪凹**，这是我行走互联网江湖的**花名**。
 - 生于浙南小城
 - 求学于成都
 - 工业设计学了5年
@@ -19,7 +19,7 @@ header-img: "img/green.jpg"
 - 好奇心与求知欲旺盛
 - 天生愚笨，好在发现较早，立志笨鸟先飞
 
-###坚信
+坚信
 
 - 这个时代，触手可及的事物都已经失去价值
 - 像我这样的年轻人读历史与老人聊天缺一不可 
@@ -28,13 +28,14 @@ header-img: "img/green.jpg"
 
 
 
-###联系
+联系
 
 - [博客：blog.morekey.me](blog.morekey.me)
 
 - [微博@潘迪凹](http://weibo.com/2518282332)
 
 - [知乎@潘迪凹](https://www.zhihu.com/people/pan-di-ao)
+
 - [简历@PM-Panmaike](https://morekeys.github.io/blog/PM-panmaike.pdf)
 
 

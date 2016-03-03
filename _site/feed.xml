@@ -5,9 +5,126 @@
     <description>潘迪凹|自说自话</description>
     <link>http://morekey.me/blog/</link>
     <atom:link href="http://morekey.me/blog/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 01 Mar 2016 05:55:11 +0000</pubDate>
-    <lastBuildDate>Tue, 01 Mar 2016 05:55:11 +0000</lastBuildDate>
+    <pubDate>Thu, 03 Mar 2016 09:14:36 +0000</pubDate>
+    <lastBuildDate>Thu, 03 Mar 2016 09:14:36 +0000</lastBuildDate>
     <generator>Jekyll v3.1.0</generator>
+    
+      <item>
+        <title>搭建自己的主页</title>
+        <description>&lt;h1 id=&quot;section&quot;&gt;搭建自己的主页&lt;/h1&gt;
+
+&lt;h2 id=&quot;section-1&quot;&gt;0.购买域名&lt;/h2&gt;
+&lt;p&gt;我是在狗爹（&lt;a href=&quot;https://sg.godaddy.com&quot;&gt;godaddy&lt;/a&gt;）上购买的域名，&lt;a href=&quot;http://morekey.me&quot;&gt;morekey.me&lt;/a&gt;,大概花了40多刀吧，买了3年，后来根据我的仔细观察，我发现，我这个价格有点亏啊，后来者可以多看看，不要这么心急就入手。
+我把购买域名放在我所有步骤之前的原因主要有两个：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;破釜沉舟，先砸钱逼迫自己前进。&lt;/li&gt;
+  &lt;li&gt;这个域名构思了挺久，一时激动就买了。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;section-2&quot;&gt;1.了解建站的基础知识&lt;/h2&gt;
+&lt;p&gt;这一块很感谢在多益网络实习的时候坐我旁边的前端实习生小哥，每当他正在忙的时候就是我向他疯狂提问的时刻，这个小伙子不急不躁，一一给我解答，感谢。
+我大致了解的知识：&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;每个电脑都有自己ip地址，一群电脑之间的通信靠tcp/ip协议&lt;/li&gt;
+  &lt;li&gt;我们要有自己的网站，必须要有一个较大的服务器（其实就是一台永远不关机的性能超级好的电脑主机），我们把网页文件存在这个服务器，这个服务器会有一个ip地址，全世界的人只要知道你的ip地址就可以访问到你上传在服务器的网页文件啦。&lt;/li&gt;
+  &lt;li&gt;其实我们在浏览器输入ip地址也可以访问对应服务器里面的文件，但是ip地址是数字啊，还有那么多小点，记都记不住，所以聪明的人类发明了域名。&lt;/li&gt;
+  &lt;li&gt;域名由两部分组成，名称和后缀，名称自己取，后缀自己挑，像我的域名&lt;a href=&quot;http://morekey.me&quot;&gt;morekey.me&lt;/a&gt;，这种就是顶级域名。还要一个概念是二级域名，比如这个博客&lt;a href=&quot;http://blog.morekey.me&quot;&gt;blog.morekey.me&lt;/a&gt;只要你买了域名，你就可以拥有一个一级域名和无数个顶级域名，使劲造吧，哈哈哈。&lt;/li&gt;
+  &lt;li&gt;域名解析：域名和ip地址之间需要一个纽带，把他们想关联起来，这个时候就需要域名解析，这是搭建网站的必要步骤。我用的解析网站&lt;a href=&quot;https://www.dnspod.cn&quot;&gt;dnspod&lt;/a&gt;。&lt;/li&gt;
+  &lt;li&gt;解析细节：a记录和cname记录，其实我也不是很懂这个，我是看教程做的，a记录就是放服务器的ip，cname记录就是放服务器的域名。&lt;/li&gt;
+  &lt;li&gt;网页设计（网站包）：这个是我自己取的，这个网站包其实就是网站这个产品的必要因数了。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;1、设计，产品经理出规划、设计师跟进去设计网站界面
+2、程序，网站的代码内核，静态或者动态页面加上一些程序：比如说聊天室等程序。&lt;/p&gt;
+
+&lt;p&gt;a.静态页面是纯html的页面&lt;/p&gt;
+
+&lt;p&gt;特点如下&lt;/p&gt;
+
+&lt;p&gt;1、每个页面都有一个url，网页以.html .htm .shtml等常见形式作为后缀，不会含？&lt;/p&gt;
+
+&lt;p&gt;2、每个静态页面都是一个独立文件，不管用乎是否访问，他们都会是一个实打实的文件上传到网站空间。&lt;/p&gt;
+
+&lt;p&gt;3、静态页面内容稳定、容易被 搜索引擎收录，也易于优化。
+4、静态页面没有数据库支持，在网站制作和维护方面工作量比较大，所以网页信息量较大时完全依赖静态网页比较困难。&lt;/p&gt;
+
+&lt;p&gt;b.动态页面&lt;/p&gt;
+
+&lt;p&gt;都是以.asp .jsp .php .cgi等形式的后缀，而且还有标志性的符号‘？’&lt;/p&gt;
+
+&lt;p&gt;特点如下：&lt;/p&gt;
+
+&lt;p&gt;1、以数据库为基础，大大降低网站维护的工作量
+2.、动态页面可以实现更多功能，比如用户注册、用户登录、在线调查、    用户管理、订单管理等等。
+3、动态页面其实并不是独立存在服务器的文件，只有用户在访问的时候才会出现。
+4、不容易被搜索引擎收录。&lt;/p&gt;
+
+&lt;p&gt;c.没有后缀的页面&lt;/p&gt;
+
+&lt;p&gt;为了让用户更快浏览，很多网站不希望相应的广告被链接在自己的页面上，所以他们利用服务器的文件漏洞，将网页拓展名改为其他名称。&lt;/p&gt;
+
+&lt;p&gt;用户  在浏览器输入网址，浏览器将域名解析到对应的ip地址，也就找到了对应的服务器里面的文件，文件通过http协议传送到用户的浏览器端口。&lt;/p&gt;
+
+&lt;h2 id=&quot;section-3&quot;&gt;2.寻找服务器&lt;/h2&gt;
+
+&lt;p&gt;我在网上乱翻教程，有在香港租的服务器，有在中国买的，看起来头都大了，买了服务器还要学服务器的后台管理，麻烦的要死哦。&lt;/p&gt;
+
+&lt;p&gt;于是，我不断地在寻找，终于找到一篇基于github搭建博客的技术文章&lt;a href=&quot;http://cnfeat.com/blog/2014/05/10/how-to-build-a-blog/&quot;&gt;cnfeat&lt;/a&gt;,感激啊。&lt;/p&gt;
+
+&lt;p&gt;他在博客里写的为什么要用github很详细了，我再谈谈我为什么要用github做服务器。&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;免费，300m&lt;/li&gt;
+  &lt;li&gt;github作为代码管理交流社区，对于我这样的非职业代码选手可以说是一个救命稻草，前期我可以在github上疯狂fork（copy），大大减少了我的学习时间。&lt;/li&gt;
+  &lt;li&gt;github很酷，老板是geek，玩的人都是geek，我来粘粘仙气。&lt;/li&gt;
+  &lt;li&gt;有教程，还详细，爽。
+##3.本地搭建git并与github链接起来&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;这一步可以说是比较的难的一步吧，作为一个非职业选手，英语停留在初中水平的渣，我实在是寸步难行啊。
+反复看教程，反复查字典，一遍一遍的搞。&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;下git，装git（教程里面说下node.js,,我看后面没有这个哥哥的出场时间，就把这个忽略了）&lt;/li&gt;
+  &lt;li&gt;注册github，并建立同名的username.github.io仓库。&lt;/li&gt;
+  &lt;li&gt;配置ssh keys ，这一步我吃了非程序选手的硬亏了。我看就人家的代码，比如说&lt;code class=&quot;highlighter-rouge&quot;&gt;$ ssh -T git@github.com&lt;/code&gt; 我第一反应就是照抄，第一次就gg了，然后我想了想，就把前面的符号去掉了，照抄，还是gg了，最后我实在没有办法，就把git反馈过来的英语复制到google翻墙找答案，百度这个坑逼，后来才发现，是空格，在代码世界里面，一个空格、一个大小写、一个标点符号都是需要注意的不能马虎。。也就是说代码的规则，以后学习代码必须先去看代码的规则啊。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;jekyllfork&quot;&gt;4.了解jekyll的基本知识配置fork别人的博客&lt;/h2&gt;
+&lt;ol&gt;
+  &lt;li&gt;下载github桌面版本&lt;/li&gt;
+  &lt;li&gt;学习jekyll（看官方文档，一般别人的博客都是用jekyll写的），其实我也就是官方文档看懂一点，就知道在git客户端，cd是打开文件夹的意思，cd看网页文件的文件，然后输入 jekyll server就可以在本地不上网预览本地文件。&lt;/li&gt;
+  &lt;li&gt;我的思路：fork别人的博客，用二脚猫功夫改代码，然后用 jekyll server预览。&lt;/li&gt;
+  &lt;li&gt;然后我就开始抄别人的博客了。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;dns&quot;&gt;5.dns解析&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;在fork好的博客里面加入一个cname的文本文件，里面写着你的域名，比如我的morekey.me。&lt;/li&gt;
+  &lt;li&gt;dnspod网站设置a记录和cname记录，可以按照我的教程&lt;a href=&quot;http://cnfeat.com/blog/2014/05/10/how-to-build-a-blog/&quot;&gt;cnfeat&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;去godaddy修改dns地址，更改 godaddy 的 Nameservers 为 DNSpod 的 NameServers。&lt;/li&gt;
+  &lt;li&gt;github客户端，把本地修改好的fork文件上传到服务器。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;section-4&quot;&gt;6.收获&lt;/h2&gt;
+
+&lt;p&gt;然后就尽情的装逼吧&lt;/p&gt;
+
+&lt;p&gt;不过我很低调，我就遇到认识的关系好的朋友，没有话题讲的时候，我就说，我寒假搞了个个人空间，挺不错的，你也去搞搞嘛，好玩又酷，巴拉巴拉。&lt;/p&gt;
+</description>
+        <pubDate>Tue, 01 Mar 2016 00:00:00 +0000</pubDate>
+        <link>http://morekey.me/blog/blog/2016/03/01/bulid-a-blog/</link>
+        <guid isPermaLink="true">http://morekey.me/blog/blog/2016/03/01/bulid-a-blog/</guid>
+        
+        <category>blog</category>
+        
+        
+        <category>blog</category>
+        
+      </item>
     
       <item>
         <title>春节随感</title>
@@ -149,6 +266,144 @@
         <guid isPermaLink="true">http://morekey.me/blog/blog/2016/02/03/about-name/</guid>
         
         <category>作者</category>
+        
+        
+        <category>blog</category>
+        
+      </item>
+    
+      <item>
+        <title>做一个不一样的卖家</title>
+        <description>&lt;h1 id=&quot;section&quot;&gt;电商运营&lt;/h1&gt;
+
+&lt;p&gt;昨天晚上无聊翻看学习资料，看了一篇由阿里巴巴和淘宝创想写的文章《做一个不一样的卖家》。&lt;/p&gt;
+
+&lt;p&gt;这本书粗糙的排版让我一度想点击右上角叉叉，但是随着阅读的深入。这本写自2012年的电商卖家指导书籍，就像一位先知的长者对我诉说历史，诉说站在2012年展望未来的故事。&lt;/p&gt;
+
+&lt;h2 id=&quot;section-1&quot;&gt;背景&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;那个年代的电子商务正在经历四个变革：&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;风投对电子商务的热情冷却。&lt;/li&gt;
+  &lt;li&gt;电子商务公司从粗放型运营走向精细化运营。&lt;/li&gt;
+  &lt;li&gt;用户数据的魔力开始展现，越来越多的公司开始注意到用户数据的重要性。&lt;/li&gt;
+  &lt;li&gt;电子商务公司分工明显，生态系统开始搭建。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;站在2016年的角度，我回望历史，这四个变革真真正正地开展深化了。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;风投再这之后对传统电子商务的热情冷却，但是020、社会化电商却吸足了他们的眼球。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;淘宝c店、天猫小商铺的日子越来越难过，风光的是那些传统转线上的大厂商，是那些在激烈市场竞争下逐渐建立起自己的运营团队和品牌价值的品牌电商。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;社会化电商时代真正到来，蘑菇街、美丽说合并，网红c店火级一时。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;京东上来就布局物流、阿里巴巴也经跟其后菜鸟物流，各大电商平台开始布局除了商品之外的各个环节。蘑菇街甚至搭建了一个网拍模特平台。&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;那个年代的电商都面临着危机，时刻考虑着前程。&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;线下传统厂商有着在产品管理、传统渠道、价格监控、售后服务、营销推广、仓储物流等六大方面的天然优势，但是线上运营能力的缺失和后来者的姿态，让他们头痛不已。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;品牌电商，正天天为营销手段单一、推广困难、品牌价值低、crm系统几乎没有、用户数据不能充分利用而发愁。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;中小电商还大多是作坊式的小工作室，受限于人力、财力、物力和知识水平，而无法做大。&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;那个年代的消费者慢慢发生了转变&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;需求触发的入口太多了，社会化平台、电商平台、线下等等。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;甄选商品的重点也慢慢从价格导向转化到产品品质、品牌价值共鸣、情感、服务品质。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;购买&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;分享&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;接下来这本书就分析了在这样一个大的电商背景下，电商人该怎么做电商，电商运营该怎么做。&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;数据，核心思想就是数据。&lt;/p&gt;
+
+&lt;p&gt;电商运营就围绕数据来进行一切行动，信息技术让数据的获取和整理变得那个方便，运营得到数据再来指定下一步计划，整个思想就是这。&lt;/p&gt;
+
+&lt;h2 id=&quot;section-2&quot;&gt;塑造产品力&lt;/h2&gt;
+&lt;p&gt;不再是从前的简单的产品价格、产品销售组合、产品样式了。而是结合数据直接去影响产品的设计、品质、定价、营销等等。&lt;/p&gt;
+
+&lt;h2 id=&quot;section-3&quot;&gt;渠道力&lt;/h2&gt;
+&lt;p&gt;结合数据去选择最优的渠道去发力，并根据渠道数据来建立一个合理的渠道组合。
+甚至可以用线上的渠道数据来影响线下渠道的布局。&lt;/p&gt;
+
+&lt;h2 id=&quot;section-4&quot;&gt;物流力&lt;/h2&gt;
+&lt;p&gt;结合数据来降低物流成本。&lt;/p&gt;
+
+&lt;h2 id=&quot;section-5&quot;&gt;营销力&lt;/h2&gt;
+
+&lt;p&gt;结合各渠道反馈上来的数据，以及各社会化平台对产品的评价与反馈，指定在哪里营销、怎么营销、花多少钱营销。
+事实监控数据，方便及时更换营销策略或者下次营销的方案制定。&lt;/p&gt;
+
+&lt;h2 id=&quot;section-6&quot;&gt;品牌力&lt;/h2&gt;
+
+&lt;p&gt;提升品牌形象，努力做到品牌溢价。&lt;/p&gt;
+
+&lt;h2 id=&quot;section-7&quot;&gt;服务力&lt;/h2&gt;
+&lt;p&gt;crm客户管理系统，不仅仅努力获取新客户，还要维护好老客户，并从老客户身上赚钱。&lt;/p&gt;
+
+&lt;p&gt;运营还要利用数据来制定销售目标，制定货品规划。&lt;/p&gt;
+
+&lt;h2 id=&quot;section-8&quot;&gt;最后本书进行了对未来的展望：&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;智慧商务：精细化各流程&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;通过数据整合，做到以人为本&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;据我对当今电商平台的了解。&lt;/p&gt;
+
+&lt;p&gt;京东在向智慧商务靠拢这一步好像走在了前面。阿里巴巴对数据的把控非常强大。&lt;/p&gt;
+
+&lt;p&gt;蘑菇街一直在打造社会化电商，具体不怎么了解，从字面上来讲是复合这个趋势的。&lt;/p&gt;
+
+&lt;p&gt;在未来，毫无疑问，这些电商巨头们，会利用自己线上渠道的数据去指导开设自己的线下渠道。&lt;/p&gt;
+
+&lt;p&gt;真正做到指哪里打哪里。这太可怕了。&lt;/p&gt;
+
+&lt;p&gt;我想到我在龙湖商业上班的同学熊哥所说的：‘龙湖之所以不和阿里巴巴合作，就是不想让线下的数据被其获取，假设被其获取，信息不对称，垄断，一家独大，整个地区的商业都将被吞噬。’&lt;/p&gt;
+
+&lt;p&gt;未来，电商线上与线下的打通，线上平台与社交网络的打通，数据共享之后，我不敢想象，这一切到底是好是坏是福是祸。&lt;/p&gt;
+
+&lt;p&gt;我为我能在最好的年纪见证这个动荡的年代变革，甚至参与到其中而感动荣幸。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;正像马云说的21世纪是dt的世纪，正像我说的未来每天都会是圣诞节。&lt;/strong&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Wed, 03 Feb 2016 00:00:00 +0000</pubDate>
+        <link>http://morekey.me/blog/blog/2016/02/03/dianzishangwu/</link>
+        <guid isPermaLink="true">http://morekey.me/blog/blog/2016/02/03/dianzishangwu/</guid>
+        
+        <category>读后感</category>
         
         
         <category>blog</category>

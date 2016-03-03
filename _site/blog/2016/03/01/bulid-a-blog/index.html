@@ -8,9 +8,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="潘迪凹|自说自话">
 
-    <title>春节随感 - MOREKEY</title>
+    <title>搭建自己的主页 - MOREKEY</title>
 
-    <link rel="canonical" href="http://morekey.me/blog/blog/2016/02/18/life/">
+    <link rel="canonical" href="http://morekey.me/blog/blog/2016/03/01/bulid-a-blog/">
 
     <!-- Icons -->
   <link rel="shortcut icon" href="img/favicon.ico">
@@ -103,12 +103,12 @@
                 <div class="post-heading">
                     <div class="Tags">
                         
-                        <a class="tag" href="/Tags/#日记" title="日记">日记</a>
+                        <a class="tag" href="/Tags/#blog" title="blog">blog</a>
                         
                     </div>
-                    <h1>春节随感</h1>
+                    <h1>搭建自己的主页</h1>
                     
-                    <span class="meta">Posted by 潘迪凹 on February 18, 2016</span>
+                    <span class="meta">Posted by 潘迪凹 on March 1, 2016</span>
                 </div>
             </div>
         </div>
@@ -124,67 +124,109 @@
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 post-container">
 
-                <p>春节随感</p>
+                <h1 id="section">搭建自己的主页</h1>
 
-<p>我们家族的春节就是一个字：聚</p>
-
-<p>注：（这里的家族单指我母亲这一支）</p>
-
-<p>外婆共有4个儿女，2男2女，那个年代的标配。</p>
-
-<p>每年正月初二，外婆都会在她的老人公寓设下筵席，散落在各地的儿女们带着他们的儿女一起挤在小小的房子里，空气里都是幸福的味道。</p>
-
-<p>一大家子聚在一起吃，一起玩，交流一年的琐碎，遇到困难就拿到酒桌上大家一起帮忙出主意，遇到高兴的事就一起分享彼此的快乐。</p>
-
-<p>以前，后辈如我，都还是小孩子，酒桌上吃完正餐便会下桌，到处奔跑，玩着鞭炮，嬉闹着。</p>
-
-<p>如今，当初的小屁孩都已经长大，到了谈婚论嫁的年龄。</p>
-
-<p>酒桌上大人们谈论最多的也是这些个话题。</p>
-
-<p>表哥大我一岁，有一个外地的女朋友，他的意思是执意要娶。</p>
-
-<p>一大家子都在他的对立面。</p>
-
-<p>理由如下：</p>
+<h2 id="section-1">0.购买域名</h2>
+<p>我是在狗爹（<a href="https://sg.godaddy.com">godaddy</a>）上购买的域名，<a href="http://morekey.me">morekey.me</a>,大概花了40多刀吧，买了3年，后来根据我的仔细观察，我发现，我这个价格有点亏啊，后来者可以多看看，不要这么心急就入手。
+我把购买域名放在我所有步骤之前的原因主要有两个：</p>
 
 <ul>
-  <li>
-    <p>对方为独生子女，家庭条件未知，日后表哥的压力会比较大</p>
-  </li>
-  <li>
-    <p>外地风俗与本地不同，日子久了摩擦会比较大</p>
-  </li>
+  <li>破釜沉舟，先砸钱逼迫自己前进。</li>
+  <li>这个域名构思了挺久，一时激动就买了。</li>
 </ul>
 
-<p>考虑到女方年龄较大，女方家庭的婚嫁压力在表哥身上，这边亲戚的好言相劝，也是一股重大的压力。
-再加上表哥的工作压力，可想而知这个年对他来说是多么的难。</p>
+<h2 id="section-2">1.了解建站的基础知识</h2>
+<p>这一块很感谢在多益网络实习的时候坐我旁边的前端实习生小哥，每当他正在忙的时候就是我向他疯狂提问的时刻，这个小伙子不急不躁，一一给我解答，感谢。
+我大致了解的知识：</p>
 
-<p>站在家族的立场来讲，出发点也是为表哥考虑，外地的独生子女嫁到本地，父母无法照看，最好的办法就是将其接到本地一起赡养，但是这样的话对于表哥来讲，日后的压力便是成吨的。
-风俗什么的其实不是问题，只要女方贤淑聪明，表哥处理好各方关系，应该问题不大。</p>
+<ol>
+  <li>每个电脑都有自己ip地址，一群电脑之间的通信靠tcp/ip协议</li>
+  <li>我们要有自己的网站，必须要有一个较大的服务器（其实就是一台永远不关机的性能超级好的电脑主机），我们把网页文件存在这个服务器，这个服务器会有一个ip地址，全世界的人只要知道你的ip地址就可以访问到你上传在服务器的网页文件啦。</li>
+  <li>其实我们在浏览器输入ip地址也可以访问对应服务器里面的文件，但是ip地址是数字啊，还有那么多小点，记都记不住，所以聪明的人类发明了域名。</li>
+  <li>域名由两部分组成，名称和后缀，名称自己取，后缀自己挑，像我的域名<a href="http://morekey.me">morekey.me</a>，这种就是顶级域名。还要一个概念是二级域名，比如这个博客<a href="http://blog.morekey.me">blog.morekey.me</a>只要你买了域名，你就可以拥有一个一级域名和无数个顶级域名，使劲造吧，哈哈哈。</li>
+  <li>域名解析：域名和ip地址之间需要一个纽带，把他们想关联起来，这个时候就需要域名解析，这是搭建网站的必要步骤。我用的解析网站<a href="https://www.dnspod.cn">dnspod</a>。</li>
+  <li>解析细节：a记录和cname记录，其实我也不是很懂这个，我是看教程做的，a记录就是放服务器的ip，cname记录就是放服务器的域名。</li>
+  <li>网页设计（网站包）：这个是我自己取的，这个网站包其实就是网站这个产品的必要因数了。</li>
+</ol>
 
-<p>通过表哥的意思应该是化压力为动力，自己去创出一番天地。坚持到底，为真爱奋斗。
-家族的意思很明显，好言相劝，一字真言：拖。
-等到女方实在忍受不住，将巨大的压力压在表哥身上，直到表哥压垮。</p>
+<p>1、设计，产品经理出规划、设计师跟进去设计网站界面
+2、程序，网站的代码内核，静态或者动态页面加上一些程序：比如说聊天室等程序。</p>
 
-<p>想到这里我真是心疼表哥。</p>
+<p>a.静态页面是纯html的页面</p>
 
-<p>这一年的表哥和我谈论的都是事业上的东西了，分享他一年的经验，回忆过去，展望未来，迷茫，但不是不知所措。</p>
+<p>特点如下</p>
 
-<p>眼睛里放着光，我想他心里是有一个支柱的，是有一个殷殷期待的眼神的。</p>
+<p>1、每个页面都有一个url，网页以.html .htm .shtml等常见形式作为后缀，不会含？</p>
 
-<p>不敢想象换做是我会怎么样。</p>
+<p>2、每个静态页面都是一个独立文件，不管用乎是否访问，他们都会是一个实打实的文件上传到网站空间。</p>
 
-<p>这个春节过的很快乐，喜气洋洋的笑容背后却是忧心忡忡。</p>
+<p>3、静态页面内容稳定、容易被 搜索引擎收录，也易于优化。
+4、静态页面没有数据库支持，在网站制作和维护方面工作量比较大，所以网页信息量较大时完全依赖静态网页比较困难。</p>
 
-<p>你问我感悟是什么？</p>
+<p>b.动态页面</p>
 
-<p>我说不出来，只是感觉自己不再年轻，也将面对生活的各种琐碎，
-像冯唐写的那样：
-&gt;年轻人没了幻想，一不小心就俗了。认了天命之后，不再和自己较劲，天暗下来，所有的道路和远方同时模糊，小肚腩立刻鼓起来，非常柔软，挡住下面的阴茎。</p>
+<p>都是以.asp .jsp .php .cgi等形式的后缀，而且还有标志性的符号‘？’</p>
 
-<p>无法想象！！</p>
+<p>特点如下：</p>
 
+<p>1、以数据库为基础，大大降低网站维护的工作量
+2.、动态页面可以实现更多功能，比如用户注册、用户登录、在线调查、    用户管理、订单管理等等。
+3、动态页面其实并不是独立存在服务器的文件，只有用户在访问的时候才会出现。
+4、不容易被搜索引擎收录。</p>
+
+<p>c.没有后缀的页面</p>
+
+<p>为了让用户更快浏览，很多网站不希望相应的广告被链接在自己的页面上，所以他们利用服务器的文件漏洞，将网页拓展名改为其他名称。</p>
+
+<p>用户  在浏览器输入网址，浏览器将域名解析到对应的ip地址，也就找到了对应的服务器里面的文件，文件通过http协议传送到用户的浏览器端口。</p>
+
+<h2 id="section-3">2.寻找服务器</h2>
+
+<p>我在网上乱翻教程，有在香港租的服务器，有在中国买的，看起来头都大了，买了服务器还要学服务器的后台管理，麻烦的要死哦。</p>
+
+<p>于是，我不断地在寻找，终于找到一篇基于github搭建博客的技术文章<a href="http://cnfeat.com/blog/2014/05/10/how-to-build-a-blog/">cnfeat</a>,感激啊。</p>
+
+<p>他在博客里写的为什么要用github很详细了，我再谈谈我为什么要用github做服务器。</p>
+
+<ol>
+  <li>免费，300m</li>
+  <li>github作为代码管理交流社区，对于我这样的非职业代码选手可以说是一个救命稻草，前期我可以在github上疯狂fork（copy），大大减少了我的学习时间。</li>
+  <li>github很酷，老板是geek，玩的人都是geek，我来粘粘仙气。</li>
+  <li>有教程，还详细，爽。
+##3.本地搭建git并与github链接起来</li>
+</ol>
+
+<p>这一步可以说是比较的难的一步吧，作为一个非职业选手，英语停留在初中水平的渣，我实在是寸步难行啊。
+反复看教程，反复查字典，一遍一遍的搞。</p>
+
+<ol>
+  <li>下git，装git（教程里面说下node.js,,我看后面没有这个哥哥的出场时间，就把这个忽略了）</li>
+  <li>注册github，并建立同名的username.github.io仓库。</li>
+  <li>配置ssh keys ，这一步我吃了非程序选手的硬亏了。我看就人家的代码，比如说<code class="highlighter-rouge">$ ssh -T git@github.com</code> 我第一反应就是照抄，第一次就gg了，然后我想了想，就把前面的符号去掉了，照抄，还是gg了，最后我实在没有办法，就把git反馈过来的英语复制到google翻墙找答案，百度这个坑逼，后来才发现，是空格，在代码世界里面，一个空格、一个大小写、一个标点符号都是需要注意的不能马虎。。也就是说代码的规则，以后学习代码必须先去看代码的规则啊。</li>
+</ol>
+
+<h2 id="jekyllfork">4.了解jekyll的基本知识配置fork别人的博客</h2>
+<ol>
+  <li>下载github桌面版本</li>
+  <li>学习jekyll（看官方文档，一般别人的博客都是用jekyll写的），其实我也就是官方文档看懂一点，就知道在git客户端，cd是打开文件夹的意思，cd看网页文件的文件，然后输入 jekyll server就可以在本地不上网预览本地文件。</li>
+  <li>我的思路：fork别人的博客，用二脚猫功夫改代码，然后用 jekyll server预览。</li>
+  <li>然后我就开始抄别人的博客了。</li>
+</ol>
+
+<h2 id="dns">5.dns解析</h2>
+
+<ol>
+  <li>在fork好的博客里面加入一个cname的文本文件，里面写着你的域名，比如我的morekey.me。</li>
+  <li>dnspod网站设置a记录和cname记录，可以按照我的教程<a href="http://cnfeat.com/blog/2014/05/10/how-to-build-a-blog/">cnfeat</a></li>
+  <li>去godaddy修改dns地址，更改 godaddy 的 Nameservers 为 DNSpod 的 NameServers。</li>
+  <li>github客户端，把本地修改好的fork文件上传到服务器。</li>
+</ol>
+
+<h2 id="section-4">6.收获</h2>
+
+<p>然后就尽情的装逼吧</p>
+
+<p>不过我很低调，我就遇到认识的关系好的朋友，没有话题讲的时候，我就说，我寒假搞了个个人空间，挺不错的，你也去搞搞嘛，好玩又酷，巴拉巴拉。</p>
 
 
                 <hr>
@@ -192,13 +234,9 @@
                 <ul class="pager">
                     
                     <li class="previous">
-                        <a href="/blog/2016/02/03/about-name/" data-toggle="tooltip" data-placement="top" title="关于名字">&larr; Previous Post</a>
+                        <a href="/blog/2016/02/18/life/" data-toggle="tooltip" data-placement="top" title="春节随感">&larr; Previous Post</a>
                     </li>
                     
-                    
-                    <li class="next">
-                        <a href="/blog/2016/03/01/bulid-a-blog/" data-toggle="tooltip" data-placement="top" title="搭建自己的主页">Next Post &rarr;</a>
-                    </li>
                     
                 </ul>
 
@@ -216,18 +254,13 @@
                 </style>
 
                 <div class="ds-share"
-                    data-thread-key="/blog/2016/02/18/life" data-title="春节随感"
+                    data-thread-key="/blog/2016/03/01/bulid a blog" data-title="搭建自己的主页"
                     data-images="http://morekey.me/blog/img/facebook.jpg"
-                    data-content="春节随感
+                    data-content="搭建自己的主页
 
-我们家族的春节就是一个字：聚
-
-注：（这里的家族单指我母亲这一支）
-
-外婆共有4个儿女，2男2女，那个年代的标配。
-
-每年正月初二，外婆都会在... | Microdust:Azeril's blog"
-                    data-url="http://morekey.me/blog/blog/2016/02/18/life/">
+0.购买域名
+我是在狗爹（godaddy）上购买的域名，morekey.me,大概花了40多刀吧，买了3年，后来根据我的仔细观察，我发现... | Microdust:Azeril's blog"
+                    data-url="http://morekey.me/blog/blog/2016/03/01/bulid-a-blog/">
                     <div class="ds-share-inline">
                       <ul  class="ds-share-icons-16">
 
@@ -246,7 +279,7 @@
 
                 <!-- 多说评论框 start -->
                 <div class="comment">
-                    <div class="ds-thread" data-thread-key="/blog/2016/02/18/life" data-title="春节随感" data-url="http://morekey.me/blog/blog/2016/02/18/life/"></div>
+                    <div class="ds-thread" data-thread-key="/blog/2016/03/01/bulid a blog" data-title="搭建自己的主页" data-url="http://morekey.me/blog/blog/2016/03/01/bulid-a-blog/"></div>
                 </div>
                 <!-- 多说评论框 end -->
             </div>

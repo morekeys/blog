@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 情感记忆+交互设计
-date: 2016-2-3
+date: 2016-3-10
 categories: blog
 tags: [毕业设计]
 description:

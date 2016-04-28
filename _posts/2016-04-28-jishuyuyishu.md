@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 技术、艺术、工匠、艺术家
+title: 工匠与艺术家
 date: 2016-4-28
 categories: blog
 tags: [read]

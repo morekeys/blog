@@ -17,6 +17,9 @@ header-img: "img/zhihu.jpg"
 - [魔壳真人密室逃脱俱乐部](http://7xqlpw.com1.z0.glb.clouddn.com/qrcode_for_gh_1d3ea786f883_430.jpg)
 - [川大一张票](http://page.renren.com/601756273/channel-119865)
 - [红包小游戏](http://m.025.com/hongbao/index.html?from=timeline&isappinstalled=0)
+-  [健身教练国家职业资格认证](http://7xqlpw.com1.z0.glb.clouddn.com/IMG_5729.JPG)
+- [四川大学毕业设计](http://7xqlpw.com1.z0.glb.clouddn.com/%E5%B1%95%E6%9D%BF.jpg)
+
 
 
 
